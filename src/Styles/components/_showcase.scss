@@ -1,0 +1,20 @@
+.showcase{
+    width: 100%;
+    height: 400px;
+    background: url('../../images/slide1.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.showcase p, .showcase h2{
+    margin-bottom: 10px;
+}
+
+.showcase .btn{
+    margin-top: 20px;
+}
