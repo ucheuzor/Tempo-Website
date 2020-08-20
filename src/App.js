@@ -1,34 +1,18 @@
 import React, { useState } from 'react';
-import Navbar from './components/Navbar';
-import Showcase from './components/Showcase';
-import CardSection1 from './components/CardSection1';
-import Xbox from './components/Xbox';
-import CardSection2 from './components/CardSection2';
-import Carbon from './components/Carbon';
-import Social from './components/Social';
-import Footer from './components/Footer';
-import Hamburger from './components/Hamburger';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Home from '../src/components/Home/Home';
+import NavBar from '../src/components/Home/NavBar';
+import './Styles/styles.scss';
 
-
-import 'normalize.css/normalize.css';
 import './Styles/styles.scss';
 
 function App() {
-  const [open, setOpen] = useState(false);
+
 
   return (
     <div>
-      <Hamburger open={open} setOpen={setOpen} />
-      <div className="container">
-        <Navbar open = {open} />
-        <Showcase />
-        <CardSection1 />
-        <Xbox />
-        <CardSection2 />
-        <Carbon />
-        <Social />
-      </div>
-      <Footer />
+      <NavBar />
+      <Home />
     </div>
   );
 }
