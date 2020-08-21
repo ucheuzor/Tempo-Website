@@ -1,19 +1,30 @@
 import React, { useState } from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../src/components/Home/Home';
 import NavBar from '../src/components/Home/NavBar';
-import './Styles/styles.scss';
-
+import Blog from '../src/components/Blog/Blog';
 import './Styles/styles.scss';
 
 function App() {
-
+  const [open, setOpen] = useState(false);
 
   return (
-    <div>
-      <NavBar />
-      <Home />
-    </div>
+    <Router >
+      <body className={open ? "mobile-nav-active" : ""} >
+        <NavBar open={open} setOpen={setOpen} />
+        <Switch>
+          <Route
+            path='/' component={Home}
+            exact
+          />
+          <Route
+            path='/blog'
+            component={Blog}
+          />
+
+        </Switch>
+      </body>
+    </Router>
   );
 }
 
