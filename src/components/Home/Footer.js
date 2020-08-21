@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ScrollArrow from './ScrollArrow';
 
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -13,9 +14,7 @@ const Footer = () => {
         }
         console.log(email);
         setError('');
-
-
-    }
+    };
 
     return (
         <>
@@ -94,7 +93,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <a href="#" className="back-to-top"><i className="ri-arrow-up-line"></i></a>
+            <ScrollArrow />
         </>
     )
 }

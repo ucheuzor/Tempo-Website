@@ -25,11 +25,14 @@ body {
   --------------------------------------------------------------*/
   .back-to-top {
     position: fixed;
-    display: none;
     right: 15px;
     bottom: 15px;
     z-index: 99999;
     transition: 0.5s;
+    animation: fadeIn 0.3s;
+    transition: opacity .4s;
+    opacity: .7;
+    cursor: pointer;
   }
   
   .back-to-top i {
@@ -46,7 +49,17 @@ body {
   }
   
   .back-to-top:hover {
+    opacity: 1;
     bottom: 19px;
+  }
+
+  @keyframes fadeIn {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: .5;
+    }
   }
   
   /*--------------------------------------------------------------

@@ -9,7 +9,7 @@ const LandingPage = ({ open, setOpen }) => {
                 open={open}
                 onClick={() => setOpen(!open)}
                 type="button"
-                class="mobile-nav-toggle d-lg-none">
+                className="mobile-nav-toggle d-lg-none">
                 <i className={open ? " icofont-close" : "icofont-navigation-menu"}></i>
             </button>
 
