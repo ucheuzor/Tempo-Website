@@ -16,7 +16,7 @@ const LandingPage = ({ open, setOpen, inner }) => {
             <header id="header" className={inner ? "header-inner-pages fixed-top" : 'fixed-top'}>
                 <div className="container d-flex align-items-center">
 
-                    <h1 className="logo mr-auto"><Link to="/">Tempo</Link></h1>
+                    <h1 className="logo mr-auto" style={{ fontFamily: 'pacifico' }}><Link to="/">Tempo</Link></h1>
                     {/* Uncomment below if you prefer to use an image logo 
                     <a href="index.html" className="logo mr-auto"><img src="assets/img/logo.png" alt="" className="img-fluid"></a> */}
                     <nav className={open ? 'mobile-nav' : "nav-menu d-none d-lg-block"}>
