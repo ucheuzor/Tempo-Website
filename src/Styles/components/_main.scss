@@ -31,7 +31,7 @@ body {
     transition: 0.5s;
     animation: fadeIn 0.3s;
     transition: opacity .4s;
-    opacity: .7;
+    opacity: .5;
     cursor: pointer;
   }
   
@@ -1755,6 +1755,10 @@ body {
     padding: 4px;
     width: calc(100% - 42px);
   }
+
+  .blog .sidebar .search-form form input[type="text"]:focus {
+    outline: none;
+  }
   
   .blog .sidebar .search-form form button {
     position: absolute;
@@ -1770,6 +1774,9 @@ body {
     background: #e43c5c;
     color: #fff;
     transition: 0.3s;
+  }
+  .blog .sidebar .search-form form button:focus{
+    outline: none;
   }
   
   .blog .sidebar .search-form form button:hover {

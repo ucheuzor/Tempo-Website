@@ -1,10 +1,19 @@
 import React from 'react';
+import NavBar from '../Home/NavBar';
+import BreadCrumb from './BreadCrumb';
+import Articles from './Articles';
+import Footer from '../Home/Footer';
 
-const Blog = () => {
+const Blog = ({open, setOpen}) => {
     return (
-        <div>
-            <h1>my blog</h1>
-        </div>
+        <>
+            <NavBar inner='header-inner-pages' open={open} setOpen={setOpen} />
+            <main id="main">
+                <BreadCrumb />
+                <Articles />
+                <Footer />
+            </main>
+        </>
     )
 }
 

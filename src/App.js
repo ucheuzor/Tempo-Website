@@ -19,8 +19,9 @@ function App() {
           />
           <Route
             path='/blog'
-            component={Blog}
-          />
+          >
+          <Blog   open = {open} setOpen = {setOpen} />
+          </Route>
 
         </Switch>
       </body>

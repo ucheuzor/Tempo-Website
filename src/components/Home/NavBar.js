@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const LandingPage = ({ open, setOpen }) => {
+const LandingPage = ({ open, setOpen, inner }) => {
     return (
         <div>
 
@@ -13,7 +13,7 @@ const LandingPage = ({ open, setOpen }) => {
                 <i className={open ? " icofont-close" : "icofont-navigation-menu"}></i>
             </button>
 
-            <header id="header" className="fixed-top ">
+            <header id="header" className={inner ? "header-inner-pages fixed-top" : 'fixed-top'}>
                 <div className="container d-flex align-items-center">
 
                     <h1 className="logo mr-auto"><Link to="/">Tempo</Link></h1>
@@ -21,7 +21,7 @@ const LandingPage = ({ open, setOpen }) => {
                     <a href="index.html" className="logo mr-auto"><img src="assets/img/logo.png" alt="" className="img-fluid"></a> */}
                     <nav className={open ? 'mobile-nav' : "nav-menu d-none d-lg-block"}>
                         <ul>
-                            <li className="active"><a href="index.html">Home</a></li>
+                            <li className="active"><Link to="/">Home</Link></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
@@ -49,7 +49,7 @@ const LandingPage = ({ open, setOpen }) => {
                         </ul>
                     </nav>
                     {open ? <div className="mobile-nav-overly" style={{ display: 'block' }}></div> :
-                        <div className="mobile-nav-overly" style={{ display: 'none' }}></div> 
+                        <div className="mobile-nav-overly" style={{ display: 'none' }}></div>
                     }
                 </div>
             </header>
