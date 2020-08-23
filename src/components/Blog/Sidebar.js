@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import thumb1 from '../../img/blog-recent-1.jpg';
 import thumb2 from '../../img/blog-recent-2.jpg';
 import thumb3 from '../../img/blog-recent-3.jpg';
@@ -32,31 +33,56 @@ const Sidebar = () => {
                 <h3 className="sidebar-title">Recent Posts</h3>
                 <div className="sidebar-item recent-posts">
                     <div className="post-item clearfix">
-                        <img src={thumb1} alt="" />
+                        <LazyLoad
+                            once={true}
+                            placeholder={<img src={thumb1} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                        >
+                            <img src={thumb1} alt="" className="img-fluid" />
+                        </LazyLoad>
                         <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
                         <time dateTime="2020-01-01">Jan 1, 2020</time>
                     </div>
 
                     <div className="post-item clearfix">
-                        <img src={thumb2} alt="" />
+                        <LazyLoad
+                            once={true}
+                            placeholder={<img src={thumb2} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                        >
+                            <img src={thumb2} alt="" className="img-fluid" />
+                        </LazyLoad>
                         <h4><a href="blog-single.html">Quidem autem et impedit</a></h4>
                         <time dateTime="2020-01-01">Jan 1, 2020</time>
                     </div>
 
                     <div className="post-item clearfix">
-                        <img src={thumb3} alt="" />
+                        <LazyLoad
+                            once={true}
+                            placeholder={<img src={thumb3} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                        >
+                            <img src={thumb3} alt="" className="img-fluid" />
+                        </LazyLoad>
                         <h4><a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
                         <time dateTime="2020-01-01">Jan 1, 2020</time>
                     </div>
 
                     <div className="post-item clearfix">
-                        <img src={thumb4} alt="" />
+                        <LazyLoad
+                            once={true}
+                            placeholder={<img src={thumb4} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                        >
+                            <img src={thumb4} alt="" className="img-fluid" />
+                        </LazyLoad>
                         <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
                         <time dateTime="2020-01-01">Jan 1, 2020</time>
                     </div>
 
                     <div className="post-item clearfix">
-                        <img src={thumb5} alt="" />
+                        <LazyLoad
+                            once={true}
+                            placeholder={<img src={thumb5} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                        >
+                            <img src={thumb5} alt="" className="img-fluid" />
+                        </LazyLoad>
                         <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
                         <time dateTime="2020-01-01">Jan 1, 2020</time>
                     </div>

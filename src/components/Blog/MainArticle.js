@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import blog1 from '../../img/blog-1.jpg';
 import blog2 from '../../img/blog-2.jpg';
 import blog3 from '../../img/blog-3.jpg';
@@ -14,7 +15,12 @@ const MainArticle = () => {
                     <div className="col-md-6 d-flex align-items-stretch">
                         <article className="entry">
                             <div className="entry-img">
-                                <img src={blog1} alt="" className="img-fluid" />
+                                <LazyLoad
+                                    once={true}
+                                    placeholder={<img src={blog1} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                                >
+                                    <img src={blog1} alt="" className="img-fluid" />
+                                </LazyLoad>
                             </div>
                             <h2 className="entry-title">
                                 <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
@@ -39,7 +45,12 @@ const MainArticle = () => {
                     <div className="col-md-6 d-flex align-items-stretch">
                         <article className="entry">
                             <div className="entry-img">
-                                <img src={blog2} alt="" className="img-fluid" />
+                                <LazyLoad
+                                    once={true}
+                                    placeholder={<img src={blog2} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                                >
+                                    <img src={blog2} alt="" className="img-fluid" />
+                                </LazyLoad>
                             </div>
                             <h2 className="entry-title">
                                 <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
@@ -65,7 +76,12 @@ const MainArticle = () => {
                     <div className="col-md-6 d-flex align-items-stretch">
                         <article className="entry">
                             <div className="entry-img">
-                                <img src={blog3} alt="" className="img-fluid" />
+                                <LazyLoad
+                                    once={true}
+                                    placeholder={<img src={blog3} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                                >
+                                    <img src={blog3} alt="" className="img-fluid" />
+                                </LazyLoad>
                             </div>
                             <h2 className="entry-title">
                                 <a href="blog-single.html">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</a>
@@ -90,7 +106,12 @@ const MainArticle = () => {
                     <div className="col-md-6 d-flex align-items-stretch">
                         <article className="entry">
                             <div className="entry-img">
-                                <img src={blog4} alt="" className="img-fluid" />
+                                <LazyLoad
+                                    once={true}
+                                    placeholder={<img src={blog4} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                                >
+                                    <img src={blog4} alt="" className="img-fluid" />
+                                </LazyLoad>
                             </div>
                             <h2 className="entry-title">
                                 <a href="blog-single.html">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</a>
@@ -116,7 +137,12 @@ const MainArticle = () => {
                         <article className="entry">
 
                             <div className="entry-img">
-                                <img src={blog5} alt="" className="img-fluid" />
+                                <LazyLoad
+                                    once={true}
+                                    placeholder={<img src={blog5} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                                >
+                                    <img src={blog5} alt="" className="img-fluid" />
+                                </LazyLoad>
                             </div>
 
                             <h2 className="entry-title">
@@ -143,7 +169,12 @@ const MainArticle = () => {
                     <div className="col-md-6 d-flex align-items-stretch">
                         <article className="entry">
                             <div className="entry-img">
-                                <img src={blog6} alt="" className="img-fluid" />
+                                <LazyLoad
+                                    once={true}
+                                    placeholder={<img src={blog6} style={{ width: '5px', height: '5px' }} alt="" className="img-fluid" />}
+                                >
+                                    <img src={blog6} alt="" className="img-fluid" />
+                                </LazyLoad>
                             </div>
                             <h2 className="entry-title">
                                 <a href="blog-single.html">Debitis cupiditate saepe ex quam aut id. Consequatur dignissimos et id id.</a>
